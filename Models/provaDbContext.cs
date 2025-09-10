@@ -1,8 +1,10 @@
 using System.Reflection.Emit;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace Prova2.Models;
 
-public class provaDbContext(DbContextOptionsBuilder<ProvaDbContext> options) : DbContext(options)
+public class provaDbContext(DbContextOptionsBuilder<provaDbContext> options) : DbContext(options)
 {
     public DbSet<User> Users => Set<User>();
     public DbSet<Tour> Tours => Set<Tour>();
