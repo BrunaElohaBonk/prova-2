@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using Prova2.Models;
 
-namespace Prova2.UseCase.CadastroTour
+namespace Prova2.UseCase.CadastroTour;
+
+public record PayloadCadastroTour
 {
     [Required]
     [MaxLength(20)]

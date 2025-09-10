@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Mvc;
 using Prova2.UseCase.CadastroTour;
+using Prova2.UseCase.Editar;
+using Prova2.UseCase.GetTour;
 
 namespace Prova2.Endpoints;
 

@@ -2,9 +2,9 @@ using Prova2.Models;
 
 namespace Prova2.UseCase.CadastroTour;
 
-public class CadastroUseCase(provaDbContext ctx)
+public class UseCaseCadastroTour(provaDbContext ctx)
 {
-    public async Task<Results<ResponseCadastroTour>> Do(PayloadCadastroTour payload)
+    public async Task<Results<CadastroTourResponse>> Do(PayloadCadastroTour payload)
     {
         var tour = new Tour
         {
