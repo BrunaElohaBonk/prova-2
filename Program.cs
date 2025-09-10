@@ -12,6 +12,7 @@ using Prova2.UseCase.Login;
 using Prova2.Services.JWT;
 using Prova2.Services.Password;
 using Prova2.Services.Users;
+using Prova2.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,6 +58,8 @@ var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
 
-
+app.ConfigureAuthEndpoints();
+app.ConfigureTourEndpoints();
+app.ConfigureUserEndpoints();
 
 app.Run();

@@ -1,3 +1,3 @@
-namespace Prova2.UseCase.Cadastro;
+namespace Prova2.UseCase.CadastroTour;
 
-public record ResponseCadastro;
+public record ResponseCadastroTour;

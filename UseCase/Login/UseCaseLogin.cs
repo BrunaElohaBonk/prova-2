@@ -1,6 +1,6 @@
 using Prova2.Services.JWT;
 using Prova2.Services.Password;
-using Prova2.Services.Profiles;
+using Prova2.Services.Users;
 
 namespace Prova2.UseCase.Login;
 

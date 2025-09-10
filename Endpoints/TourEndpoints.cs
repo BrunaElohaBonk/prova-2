@@ -4,7 +4,7 @@ namespace Prova2.Endpoints;
 
 public static class TourEndpoints
 {
-    public static void ConfigureRoomEndpoints(this WebApplication app)
+    public static void ConfigureTourEndpoints(this WebApplication app)
     {
         app.MapGet("tour/{id}", async (
             Guid id,

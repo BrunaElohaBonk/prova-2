@@ -1,7 +1,6 @@
 using Prova2.Models;
-using Prova2.UseCase.CadastroTour;
 
-namespace Prova2.UseCase.Cadastro;
+namespace Prova2.UseCase.CadastroTour;
 
 public class CadastroUseCase(provaDbContext ctx)
 {

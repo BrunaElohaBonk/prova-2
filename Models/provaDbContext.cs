@@ -10,6 +10,8 @@ public class provaDbContext(DbContextOptionsBuilder<provaDbContext> options) : D
     public DbSet<Tour> Tours => Set<Tour>();
     public DbSet<Point> Points => Set<Point>();
 
+    public object Tour { get; internal set; }
+
     protected override void OnModelCreating(ModuleBuilder model)
     {
         model.Entity<User>();
